@@ -1,0 +1,36 @@
+Problem Statement
+The Rubik’s Cube is a widely recognized 3D combination puzzle that has captivated
+minds for decades. While solving the cube manually requires practice, patience, and
+spatial reasoning, creating a system that can solve it automatically involves integrating
+knowledge from embedded systems, mechanical design, and algorithm development.
+Most existing automated Rubik’s Cube solvers rely on computer vision using cameras
+and image processing libraries like OpenCV to detect the cube’s state. These systems
+are often complex, costly, and sensitive to lighting conditions and calibration errors,
+making them less practical for simple, educational, or low-budget implementations.
+The problem arises in developing a simplified, cost-effective, and efficient system
+that can accurately solve a physical Rubik’s Cube without relying on computer vision.
+Instead, there is a need for a solution that allows manual input of the cube’s configuration intuitively and uses a microcontroller-based system to physically solve the cube
+using precise motor control. Furthermore, the system should be user-friendly, platformindependent, and customizable for further experimentation and improvement.
+This project aims to address this problem by designing and implementing a semiautomated Rubik’s Cube solver that uses the Teensy 4.1 microcontroller with Ethernet
+capability to host a web-based interface for cube configuration. The user manually in5
+puts the color configuration through the browser interface, which is then processed
+by a solving algorithm. The resulting solution is executed by stepper motors controlled via the AccelStepper library. The mechanical setup is built using 3D-printed
+components to hold and rotate the cube faces. The system is designed to be reliable,
+affordable, and educational, offering a hands-on experience with embedded control,
+algorithm design, and mechanical integration.
+Objectives:
+1. Develop a Web-Based Interface: Create an intuitive and interactive web
+server hosted on the Teensy 4.1 using Ethernet connectivity, allowing users to
+input the color configuration of the Rubik’s Cube easily via a browser.
+2. Implement a Solving Algorithm: Utilize a cube-solving algorithm library
+capable of interpreting the user-defined configuration and generating an efficient
+sequence of moves required to solve the cube.
+3. Control Stepper Motors Accurately: Integrate and program multiple stepper motors using the AccelStepper library to physically rotate the cube faces
+based on the algorithm’s instructions.
+4. Design a Mechanical Framework: Design and 3D-print a sturdy and precisely aligned mechanical frame to hold the Rubik’s Cube and allow smooth,
+controlled face rotations during the solving process.
+5. Ensure System Reliability and Safety: Build a reliable system with error handling such that invalid cube configurations are detected through input
+validation on the web interface, preventing misoperation.
+6. Promote Cost-Effectiveness and Simplicity: Avoid the complexity of computer vision systems by opting for manual input, making the project more accessible for learning and demonstration purposes.
+7. Encourage Learning and Customization: Provide a platform for understanding embedded systems, algorithm design, web development, and mechatronics, while allowing users to customize motor speeds, solver logic, or the
+mechanical setup.
