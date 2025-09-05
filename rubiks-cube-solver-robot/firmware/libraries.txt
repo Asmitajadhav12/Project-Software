@@ -1,0 +1,18 @@
+Rubik’s Cube Solver Robot – Required Arduino Libraries
+
+
+1. AccelStepper
+   For controlling each stepper motor with acceleration and speed limits.
+
+2. MultiStepper
+   Works with AccelStepper to control multiple motors at the same time.
+
+3. CubeCentral
+   Custom library that provides the web-based interface
+   (lets you set up the cube from a browser).
+
+4. CubeSolver
+   Contains the Kociemba two-phase algorithm used to solve the cube.
+
+5. NativeEthernet (Teensy 4.1)
+   Ethernet support for Teensy boards, required to host the web server.
